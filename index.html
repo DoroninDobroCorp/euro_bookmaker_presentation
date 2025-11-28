@@ -14,167 +14,63 @@
             --card-bg: #ffffff;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        header {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
+        header { background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white; padding: 60px 0; text-align: center; }
         header h1 { font-size: 2.5rem; margin-bottom: 10px; }
         header p { font-size: 1.2rem; opacity: 0.9; }
-        nav {
-            background: var(--primary);
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            transition: background 0.3s;
-        }
+        nav { background: var(--primary); padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+        nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+        nav a { color: white; text-decoration: none; padding: 8px 16px; border-radius: 4px; transition: background 0.3s; }
         nav a:hover { background: rgba(255,255,255,0.1); }
-        section {
-            padding: 60px 0;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        h2 {
-            color: var(--primary);
-            font-size: 2rem;
-            margin-bottom: 30px;
-            text-align: center;
-        }
+        section { padding: 60px 0; border-bottom: 1px solid #e0e0e0; }
+        h2 { color: var(--primary); font-size: 2rem; margin-bottom: 30px; text-align: center; }
         h3 { color: var(--secondary); margin: 20px 0 10px; }
-        .card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 30px;
-            margin: 20px 0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .stat-box {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 12px;
-            text-align: center;
-        }
-        .stat-box .number {
-            font-size: 2.5rem;
-            font-weight: bold;
-            display: block;
-        }
-        .stat-box .label { opacity: 0.9; }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid #e0e0e0;
-        }
+        h4 { color: var(--primary); margin: 15px 0 8px; }
+        .card { background: var(--card-bg); border-radius: 12px; padding: 30px; margin: 20px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .stat-box { background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white; padding: 25px; border-radius: 12px; text-align: center; }
+        .stat-box .number { font-size: 2.2rem; font-weight: bold; display: block; }
+        .stat-box .label { opacity: 0.9; font-size: 0.9rem; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95rem; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #e0e0e0; }
         th { background: var(--primary); color: white; }
         tr:hover { background: #f5f5f5; }
         .highlight { background: #e8f5e9 !important; }
         .warning { background: #fff3e0 !important; }
-        .source {
-            font-size: 0.85rem;
-            color: #666;
-            font-style: italic;
-            margin-top: 10px;
-        }
+        .source { font-size: 0.85rem; color: #666; font-style: italic; margin-top: 10px; }
         .source a { color: var(--secondary); }
         .profit { color: #2e7d32; font-weight: bold; }
         .loss { color: #c62828; font-weight: bold; }
-        .formula {
-            background: #f5f5f5;
-            padding: 15px;
-            border-radius: 8px;
-            font-family: monospace;
-            margin: 10px 0;
-            overflow-x: auto;
-        }
-        .pros-cons {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
+        .formula { background: #f5f5f5; padding: 15px; border-radius: 8px; font-family: monospace; margin: 10px 0; overflow-x: auto; font-size: 0.9rem; }
+        .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
         .pros { border-left: 4px solid var(--accent); padding-left: 20px; }
         .cons { border-left: 4px solid #ff5722; padding-left: 20px; }
         ul { margin-left: 20px; }
         li { margin: 8px 0; }
-        .timeline {
-            position: relative;
-            padding-left: 30px;
-        }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: var(--primary);
-        }
-        .timeline-item {
-            position: relative;
-            margin: 30px 0;
-            padding-left: 20px;
-        }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -36px;
-            top: 5px;
-            width: 15px;
-            height: 15px;
-            background: var(--accent);
-            border-radius: 50%;
-            border: 3px solid white;
-            box-shadow: 0 0 0 3px var(--primary);
-        }
-        footer {
-            background: var(--primary);
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
+        blockquote { border-left: 4px solid var(--accent); padding-left: 15px; margin: 15px 0; font-style: italic; background: #f9f9f9; padding: 15px; border-radius: 0 8px 8px 0; }
+        .timeline { position: relative; padding-left: 30px; }
+        .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--primary); }
+        .timeline-item { position: relative; margin: 30px 0; padding-left: 20px; }
+        .timeline-item::before { content: ''; position: absolute; left: -36px; top: 5px; width: 15px; height: 15px; background: var(--accent); border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 3px var(--primary); }
+        footer { background: var(--primary); color: white; text-align: center; padding: 30px; }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: bold; margin: 2px; }
+        .badge-green { background: #c8e6c9; color: #2e7d32; }
+        .badge-red { background: #ffcdd2; color: #c62828; }
+        .badge-blue { background: #bbdefb; color: #1565c0; }
         @media (max-width: 768px) {
             .pros-cons { grid-template-columns: 1fr; }
             header h1 { font-size: 1.8rem; }
             nav ul { flex-direction: column; align-items: center; }
+            .stat-box .number { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>🎯 Euro Sharp Betting</h1>
-            <p>Легальный европейский букмекер для sharp-игроков с кросс-беттинг моделью</p>
+            <h1>Euro Sharp Betting</h1>
+            <p>Легальный европейский букмекер с уникальным позиционированием: "Мы не баним победителей"</p>
         </div>
     </header>
 
@@ -183,11 +79,11 @@
             <li><a href="#summary">Резюме</a></li>
             <li><a href="#market">Рынок</a></li>
             <li><a href="#model">Бизнес-модель</a></li>
+            <li><a href="#license">Лицензия</a></li>
             <li><a href="#costs">Затраты</a></li>
             <li><a href="#revenue">Доходы</a></li>
-            <li><a href="#breakeven">Точка безубыточности</a></li>
+            <li><a href="#cac">CAC и маркетинг</a></li>
             <li><a href="#risks">Риски</a></li>
-            <li><a href="#timeline">План запуска</a></li>
         </ul>
     </nav>
 
@@ -200,31 +96,36 @@
                     <span class="label">Онлайн беттинг в Европе 2024</span>
                 </div>
                 <div class="stat-box">
-                    <span class="number">3.5%</span>
+                    <span class="number">4.0%</span>
                     <span class="label">Целевая маржа с оборота</span>
                 </div>
                 <div class="stat-box">
-                    <span class="number">€285K</span>
+                    <span class="number">€180K</span>
                     <span class="label">Минимальные начальные затраты</span>
                 </div>
                 <div class="stat-box">
-                    <span class="number">€8.2M</span>
+                    <span class="number">€714K</span>
                     <span class="label">Месячный оборот для безубыточности</span>
                 </div>
             </div>
             
             <div class="card">
-                <h3>Концепция</h3>
-                <p><strong>Позиционирование:</strong> Легальный европейский букмекер, который НЕ банит winning-игроков (sharp bettors), с самой широкой линией среди подобных.</p>
-                <p><strong>Реальная модель:</strong> Кросс-беттинг (арбитраж) с BetInAsia, Polymarket, испанскими букмекерами и другими источниками ликвидности. Мы принимаем ставки у клиентов и хеджируем их на других площадках, оставляя себе маржу.</p>
-                
-                <h3>Ключевое преимущество</h3>
+                <h3>Концепция: Двойная целевая аудитория</h3>
+                <p><strong>Маркетинговое позиционирование:</strong> "Единственный букмекер с широкой линией, который НЕ БАНИТ победителей". Это позволяет привлекать:</p>
                 <ul>
-                    <li>Испанские суды запретили букмекерам банить winning-игроков (2021)</li>
-                    <li>Pinnacle работает по модели "Winners Welcome" с маржой 2-3%</li>
-                    <li>Мы даем коэффициенты хуже Pinnacle (1.83 vs 1.92), но не баним</li>
-                    <li>Разница в марже позволяет хеджировать ставки с прибылью</li>
+                    <li><strong>Sharp bettors (5-10% клиентов)</strong> - профессионалы, которых банят везде. Они приходят к нам осознанно.</li>
+                    <li><strong>Рекреационные игроки (90-95% клиентов)</strong> - обычные беттеры, которых привлекает честный имидж. Большинство из них будут минусовыми.</li>
                 </ul>
+                
+                <h3>Реальная бизнес-модель: Гибридный доход</h3>
+                <div class="formula">
+                    <strong>Источник 1:</strong> Кросс-беттинг (хеджирование на Pinnacle/BetInAsia) = ~2.5% с оборота sharp bettors<br>
+                    <strong>Источник 2:</strong> Классический GGR от минусовых игроков = ~5-7% с их оборота<br>
+                    <strong>Источник 3:</strong> Affiliate кэшбек от Pinnacle (25-40% revenue share) = ~0.5-1% дополнительно<br>
+                    <br>
+                    <strong>Средневзвешенная маржа:</strong> ~4% от общего оборота
+                </div>
+                <p class="source">Источник по affiliate: <a href="https://www.pinnacle.com/affiliates/" target="_blank">Pinnacle Affiliates - до 40% revenue share</a></p>
             </div>
         </div>
     </section>
@@ -236,201 +137,252 @@
             <div class="card">
                 <h3>Европейский рынок онлайн-беттинга 2024</h3>
                 <table>
-                    <tr>
-                        <th>Показатель</th>
-                        <th>Значение</th>
-                        <th>Изменение YoY</th>
-                    </tr>
-                    <tr>
-                        <td>Общий GGR Европы</td>
-                        <td>€123.4 млрд</td>
-                        <td>+5%</td>
-                    </tr>
-                    <tr>
-                        <td>Онлайн сегмент GGR</td>
-                        <td>€47.9 млрд</td>
-                        <td>+11.7%</td>
-                    </tr>
-                    <tr>
-                        <td>Спортивные ставки онлайн</td>
-                        <td>€13.7 млрд</td>
-                        <td>+6.9% CAGR</td>
-                    </tr>
-                    <tr>
-                        <td>Доля мобильных устройств</td>
-                        <td>58%</td>
-                        <td>+2%</td>
-                    </tr>
-                    <tr>
-                        <td>Доля онлайн в общем рынке</td>
-                        <td>39%</td>
-                        <td>прогноз 45% к 2029</td>
-                    </tr>
+                    <tr><th>Показатель</th><th>Значение</th><th>Источник</th></tr>
+                    <tr><td>Общий GGR Европы</td><td>€123.4 млрд (+5% YoY)</td><td><a href="https://www.egba.eu/news-post/european-gambling-market-reaches-e123-4-billion-in-2024/" target="_blank">EGBA 2025</a></td></tr>
+                    <tr><td>Онлайн сегмент GGR</td><td>€47.9 млрд (+11.7% YoY)</td><td><a href="https://www.egba.eu/news-post/european-gambling-market-reaches-e123-4-billion-in-2024/" target="_blank">EGBA 2025</a></td></tr>
+                    <tr><td>Спортивные ставки онлайн</td><td>€13.7 млрд</td><td><a href="https://igamingbusiness.com/finance/european-gross-gambling-revenue-2024/" target="_blank">iGaming Business</a></td></tr>
+                    <tr><td>Доля мобильных устройств</td><td>58%</td><td><a href="https://www.egba.eu/resources/factsheets-infographics/" target="_blank">EGBA Factsheets</a></td></tr>
+                    <tr><td>Прогноз роста онлайн 2024-2029</td><td>+6.9% CAGR</td><td><a href="https://cointelegraph.com/igaming/news/egba-report-shows-european-gambling-ma" target="_blank">Cointelegraph/EGBA</a></td></tr>
                 </table>
-                <p class="source">Источник: <a href="https://www.egba.eu/news-post/european-gambling-market-reaches-e123-4-billion-in-2024/" target="_blank">EGBA & H2 Gambling Capital, March 2025</a></p>
             </div>
 
             <div class="card">
-                <h3>Топ рынки по GGR</h3>
+                <h3>Судебный прецедент Испании - ключ к модели</h3>
+                <p><strong>Июль 2021:</strong> Суды первой инстанции в Овьедо постановили, что Betfair и Bet365 <strong>НЕ МОГУТ ограничивать счета winning-игроков</strong>.</p>
+                <blockquote>
+                    "Такие ограничения нарушают права потребителей согласно General Law of Consumers and Users. Букмекеры не могут выборочно отказывать в услугах."
+                </blockquote>
                 <table>
-                    <tr>
-                        <th>Страна</th>
-                        <th>Общий GGR</th>
-                        <th>Онлайн GGR</th>
-                        <th>Онлайн %</th>
-                    </tr>
-                    <tr>
-                        <td>Великобритания</td>
-                        <td>€30.8 млрд</td>
-                        <td>€11.1 млрд</td>
-                        <td>36%</td>
-                    </tr>
-                    <tr>
-                        <td>Италия</td>
-                        <td>€25.5 млрд</td>
-                        <td>€4.6 млрд</td>
-                        <td>18%</td>
-                    </tr>
-                    <tr>
-                        <td>Франция</td>
-                        <td>€17.8 млрд</td>
-                        <td>€3.8 млрд</td>
-                        <td>21%</td>
-                    </tr>
-                    <tr class="highlight">
-                        <td>Испания</td>
-                        <td>€8.5 млрд*</td>
-                        <td>€1.2 млрд*</td>
-                        <td>14.2%</td>
-                    </tr>
+                    <tr><th>Последствия для испанских БК</th><th>Значение</th></tr>
+                    <tr><td>Падение GGR Q4 2021</td><td class="loss">-58% YoY</td></tr>
+                    <tr><td>Падение GGR Q1 2022</td><td class="loss">-41% YoY</td></tr>
+                    <tr><td>При этом оборот ставок</td><td class="profit">ВЫРОС</td></tr>
                 </table>
-                <p class="source">* Испания особенно интересна из-за судебных решений, запрещающих ограничивать winning-игроков</p>
-            </div>
-
-            <div class="card">
-                <h3>Целевая аудитория: Sharp Bettors</h3>
-                <p>Sharp bettors (профессиональные игроки) составляют около <strong>1-3%</strong> от всех беттеров, но генерируют непропорционально большой объем ставок благодаря:</p>
-                <ul>
-                    <li>Высоким ставкам (средняя ставка €500-5000 vs €20-50 у рекреационных)</li>
-                    <li>Высокой частоте ставок (10-100+ в день)</li>
-                    <li>Поиску value - готовности ставить там, где есть преимущество</li>
-                </ul>
-                <p>Большинство букмекеров банят таких игроков, что создает неудовлетворенный спрос на ~<strong>€500M-1B</strong> годового оборота.</p>
+                <p><strong>Вывод:</strong> Sharp bettors массово пришли в Испанию и забрали прибыль. Мы можем использовать эту аудиторию.</p>
+                <p class="source">Источники: <a href="https://www.legalsportsreport.com/74616/what-happens-when-sportsbooks-cannot-limit-players/" target="_blank">Legal Sports Report, Aug 2022</a>, <a href="https://www.yogonet.com/international/news/2021/07/30/58610-spain-courts-rule-against-betfair-and-bet365-for-suspending-winning-players/" target="_blank">Yogonet, Jul 2021</a></p>
             </div>
         </div>
     </section>
 
     <section id="model">
         <div class="container">
-            <h2>Бизнес-модель: Кросс-беттинг</h2>
+            <h2>Бизнес-модель: Гибридный подход</h2>
             
             <div class="card">
                 <h3>Как это работает</h3>
+                <table>
+                    <tr><th>Тип клиента</th><th>Доля</th><th>Их поведение</th><th>Наш доход</th></tr>
+                    <tr>
+                        <td><strong>Sharp bettors</strong></td>
+                        <td>5-10%</td>
+                        <td>Ставят по value, долгосрочно плюсовые</td>
+                        <td>Хеджируем на Pinnacle/BetInAsia, забираем спред ~2.5%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Рекреационные (минусовые)</strong></td>
+                        <td>90-95%</td>
+                        <td>Ставят эмоционально, долгосрочно минусовые</td>
+                        <td>Классический GGR 5-7%, можем не хеджировать</td>
+                    </tr>
+                </table>
+                
+                <h4>Дополнительный доход: Affiliate от Pinnacle</h4>
+                <p>Pinnacle платит affiliate партнерам <strong>25-40% от net revenue</strong> приведенных игроков. Когда мы хеджируем ставки наших клиентов на Pinnacle, мы фактически "приводим" им игроков (наш hedge-аккаунт).</p>
                 <div class="formula">
-                    Клиент ставит у нас на "Команда A" @ 1.83<br>
-                    Мы хеджируем на BetInAsia/Pinnacle "Команда A" @ 1.92<br>
-                    <br>
-                    При ставке €1000:<br>
-                    - Если выигрывает: Клиент получает €1830, мы получаем €1920 = <span class="profit">+€90 прибыли</span><br>
-                    - Если проигрывает: Мы теряем €1000, клиент теряет €1000 = <span class="profit">€0 (нейтрально)</span><br>
-                    <br>
-                    Средняя прибыль: ~4.7% от суммы ставки на выигрышные исходы<br>
-                    С учетом 50% вероятности: ~2.35% от оборота гарантированно<br>
-                    Реалистичная цель с оптимизацией: 3.5% от оборота
+                    Оборот хеджирования: €1,000,000/мес<br>
+                    Pinnacle margin: ~2.5% = €25,000 GGR для Pinnacle<br>
+                    Наш affiliate rebate (30%): €7,500/мес = 0.75% от оборота дополнительно
                 </div>
+                <p class="source">Источник: <a href="https://www.pinnacle.com/affiliates/faq" target="_blank">Pinnacle Affiliates FAQ</a>, <a href="https://silentbet.com/pinnacle-affiliate-program/" target="_blank">SilentBet Review</a></p>
+            </div>
+
+            <div class="card">
+                <h3>Расчет итоговой маржи 4%</h3>
+                <table>
+                    <tr><th>Компонент</th><th>Доля оборота</th><th>Маржа</th><th>Вклад</th></tr>
+                    <tr>
+                        <td>Sharp bettors (хеджируем)</td>
+                        <td>30%</td>
+                        <td>2.5%</td>
+                        <td>0.75%</td>
+                    </tr>
+                    <tr>
+                        <td>Рекреационные (классический GGR)</td>
+                        <td>70%</td>
+                        <td>5.5%</td>
+                        <td>3.85%</td>
+                    </tr>
+                    <tr>
+                        <td>Affiliate rebate Pinnacle</td>
+                        <td>30%</td>
+                        <td>0.75%</td>
+                        <td>0.22%</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td><strong>ИТОГО</strong></td>
+                        <td>100%</td>
+                        <td></td>
+                        <td><strong>~4.0%</strong></td>
+                    </tr>
+                </table>
+                <p><em>* Консервативная оценка. При большей доле минусовых игроков маржа выше.</em></p>
             </div>
 
             <div class="card">
                 <h3>Источники хеджирования</h3>
                 <table>
-                    <tr>
-                        <th>Платформа</th>
-                        <th>Тип</th>
-                        <th>Маржа</th>
-                        <th>Лимиты</th>
-                        <th>Преимущества</th>
-                    </tr>
+                    <tr><th>Платформа</th><th>Маржа</th><th>Лимиты</th><th>Ссылка</th></tr>
                     <tr>
                         <td><strong>BetInAsia BLACK</strong></td>
-                        <td>Брокер</td>
                         <td>1.5-2%</td>
                         <td>€50K+</td>
-                        <td>Доступ к азиатским букмекерам, высокая ликвидность</td>
+                        <td><a href="https://betinasia.com/" target="_blank">betinasia.com</a></td>
                     </tr>
                     <tr>
                         <td><strong>Pinnacle</strong></td>
-                        <td>Букмекер</td>
                         <td>2-3%</td>
                         <td>€20K+</td>
-                        <td>"Winners Welcome", самые острые линии</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Испанские БК</strong></td>
-                        <td>Букмекеры</td>
-                        <td>4-6%</td>
-                        <td>Без ограничений*</td>
-                        <td>Суды запретили банить, можно арбитражить</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Polymarket</strong></td>
-                        <td>Prediction Market</td>
-                        <td>~1%</td>
-                        <td>Высокие</td>
-                        <td>Альтернативные рынки, политика, события</td>
+                        <td><a href="https://www.pinnacle.com/" target="_blank">pinnacle.com</a></td>
                     </tr>
                     <tr>
                         <td><strong>Orbit Exchange</strong></td>
-                        <td>Биржа</td>
-                        <td>0% + комиссия</td>
-                        <td>Зависит от ликвидности</td>
-                        <td>Betfair-подобная биржа через BetInAsia</td>
+                        <td>0% + комиссия 2-3%</td>
+                        <td>Ликвидность</td>
+                        <td><a href="https://betinasia.com/" target="_blank">Через BetInAsia</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Испанские БК</strong></td>
+                        <td>4-6%</td>
+                        <td>Без лимитов*</td>
+                        <td>Bet365.es, Betfair.es</td>
                     </tr>
                 </table>
-                <p class="source">Источник: <a href="https://betinasia.com/" target="_blank">BetInAsia</a>, <a href="https://www.pinnacle.com/betting-resources/en/betting-tools/margin-calculator" target="_blank">Pinnacle</a></p>
             </div>
+        </div>
+    </section>
 
+    <section id="license">
+        <div class="container">
+            <h2>Выбор лицензии: Мальта vs Кюрасао</h2>
+            
             <div class="card">
-                <h3>Судебные прецеденты в Испании</h3>
-                <p><strong>Июль 2021:</strong> Суды первой инстанции в Овьедо (Астурия) постановили, что Betfair и Bet365 <strong>не могут ограничивать счета winning-игроков</strong>, включая арбитражных беттеров.</p>
-                <blockquote style="border-left: 4px solid var(--accent); padding-left: 15px; margin: 15px 0; font-style: italic;">
-                    "Такие ограничения нарушают права потребителей согласно General Law of Consumers and Users"
-                </blockquote>
-                <p><strong>Результат:</strong> Доходы испанских букмекеров упали на 58% в Q4 2021 и 41% в Q1 2022 (при росте оборота!) - это означает, что sharp bettors активно используют эту возможность.</p>
-                <p class="source">Источник: <a href="https://www.legalsportsreport.com/74616/what-happens-when-sportsbooks-cannot-limit-players/" target="_blank">Legal Sports Report, Aug 2022</a>, <a href="https://www.yogonet.com/international/news/2021/07/30/58610-spain-courts-rule-against-betfair-and-bet365-for-suspending-winning-players/" target="_blank">Yogonet, Jul 2021</a></p>
-            </div>
-
-            <div class="card">
-                <h3>Расчет маржи</h3>
+                <h3>Детальное сравнение</h3>
                 <table>
+                    <tr><th>Параметр</th><th>Мальта MGA</th><th>Кюрасао</th><th>Наш выбор</th></tr>
                     <tr>
-                        <th>Параметр</th>
-                        <th>Pinnacle</th>
-                        <th>Наш БК</th>
-                        <th>Разница</th>
+                        <td>Заявка</td>
+                        <td>€5,000</td>
+                        <td>€5,000</td>
+                        <td>-</td>
                     </tr>
                     <tr>
-                        <td>Коэффициент (пример)</td>
-                        <td>1.92</td>
-                        <td>1.83</td>
-                        <td>0.09</td>
+                        <td>Годовая лицензия</td>
+                        <td>€25,000</td>
+                        <td>€55,000-62,000</td>
+                        <td><span class="badge badge-green">Мальта дешевле</span></td>
                     </tr>
                     <tr>
-                        <td>Implied probability</td>
-                        <td>52.08%</td>
-                        <td>54.64%</td>
-                        <td>+2.56%</td>
+                        <td>Compliance contribution</td>
+                        <td>€25,000 - €600,000/год</td>
+                        <td>Включено</td>
+                        <td><span class="badge badge-red">Мальта дороже при росте!</span></td>
                     </tr>
                     <tr>
-                        <td>Маржа на рынок</td>
-                        <td>~2-3%</td>
-                        <td>~5-6%</td>
-                        <td>+3%</td>
+                        <td>Минимальный капитал</td>
+                        <td>€100,000</td>
+                        <td>Минимальные требования</td>
+                        <td><span class="badge badge-green">Кюрасао проще</span></td>
                     </tr>
-                    <tr class="highlight">
-                        <td><strong>Арбитражная прибыль</strong></td>
-                        <td colspan="3"><strong>~4.7% на выигрышную ставку, ~2.35-3.5% от оборота</strong></td>
+                    <tr>
+                        <td>Срок получения</td>
+                        <td>12-16 недель</td>
+                        <td>8-12 недель</td>
+                        <td><span class="badge badge-green">Кюрасао быстрее</span></td>
+                    </tr>
+                    <tr>
+                        <td>Своя платформа</td>
+                        <td>Строгий технический аудит</td>
+                        <td>Гибкие требования</td>
+                        <td><span class="badge badge-green">Кюрасао проще</span></td>
+                    </tr>
+                    <tr>
+                        <td>Доступ к ЕС</td>
+                        <td>Полный (EU passport)</td>
+                        <td>Ограниченный</td>
+                        <td><span class="badge badge-blue">Зависит от рынка</span></td>
+                    </tr>
+                    <tr>
+                        <td>Репутация</td>
+                        <td>Высокая (Tier 1)</td>
+                        <td>Средняя (Tier 2)</td>
+                        <td><span class="badge badge-blue">Мальта лучше</span></td>
                     </tr>
                 </table>
+                <p class="source">Источники: <a href="https://www.mga.org.mt/app/uploads/Guidance-Note-Licence-Fees-and-Taxation-1.pdf" target="_blank">MGA Official</a>, <a href="https://gbo-licensing.com/curacao-gaming-license-fees/" target="_blank">GBO Licensing</a>, <a href="https://liongaming.io/curacao-vs-malta-gaming-licence-which-is-right-for-your" target="_blank">LionGaming Comparison</a></p>
+            </div>
+
+            <div class="card">
+                <h3>Почему мы выбираем стратегию "Кюрасао сначала, Мальта потом"</h3>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Кюрасао на старте:</h4>
+                        <ul>
+                            <li>Быстрый запуск (2-3 месяца)</li>
+                            <li>Нет требований к капиталу €100K</li>
+                            <li>Гибкость для своей платформы</li>
+                            <li>Фиксированная стоимость (нет compliance %%)</li>
+                            <li>Можно тестировать модель</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Мальта при масштабировании:</h4>
+                        <ul>
+                            <li>Доступ к регулируемым рынкам ЕС</li>
+                            <li>Выше доверие клиентов</li>
+                            <li>Лучше для банковских партнерств</li>
+                            <li>При GGR > €3M compliance становится пропорциональным</li>
+                        </ul>
+                    </div>
+                </div>
+                <p><strong>Важно про свою платформу:</strong> Кюрасао более лоялен к собственным разработкам. Мальта требует сертификацию eCOGRA/GLI и полный технический аудит, что стоит дополнительно €20,000-50,000 и занимает 2-3 месяца.</p>
+            </div>
+
+            <div class="card">
+                <h3>Своя платформа vs White Label</h3>
+                <table>
+                    <tr><th>Параметр</th><th>White Label</th><th>Своя платформа</th><th>Источник</th></tr>
+                    <tr>
+                        <td>Начальная стоимость</td>
+                        <td>€15,000 - €50,000</td>
+                        <td>€50,000 - €150,000 (MVP)</td>
+                        <td><a href="https://www.suffescom.com/blog/white-label-sportsbook-cost" target="_blank">Suffescom</a></td>
+                    </tr>
+                    <tr>
+                        <td>Срок запуска</td>
+                        <td>2-4 недели</td>
+                        <td>3-6 месяцев</td>
+                        <td><a href="https://evacodes.com/blog/white-label-sports-betting" target="_blank">EvaCodes</a></td>
+                    </tr>
+                    <tr>
+                        <td>Контроль</td>
+                        <td>Ограниченный</td>
+                        <td>Полный</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Месячные роялти</td>
+                        <td>5-15% от GGR</td>
+                        <td>€0</td>
+                        <td><a href="https://symphony-solutions.com/insights/turnkey-vs-white-label-sportsbook" target="_blank">Symphony</a></td>
+                    </tr>
+                    <tr>
+                        <td>Кастомизация для хеджирования</td>
+                        <td>Сложно/невозможно</td>
+                        <td>Полная свобода</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+                <p><strong>Наша рекомендация:</strong> Для кросс-беттинг модели критически важна интеграция с hedge-источниками. Своя платформа дает полный контроль, но можно начать с white label и параллельно разрабатывать свою.</p>
             </div>
         </div>
     </section>
@@ -440,538 +392,387 @@
             <h2>Начальные затраты и операционные расходы</h2>
             
             <div class="card">
-                <h3>Сравнение лицензий</h3>
+                <h3>Детализация начальных затрат (Кюрасао + своя платформа)</h3>
                 <table>
+                    <tr><th>Категория</th><th>Минимум</th><th>Оптимально</th><th>Комментарий</th></tr>
                     <tr>
-                        <th>Юрисдикция</th>
-                        <th>Заявка</th>
-                        <th>Годовая плата</th>
-                        <th>Капитал</th>
-                        <th>Налог</th>
-                        <th>Срок получения</th>
-                    </tr>
-                    <tr class="highlight">
-                        <td><strong>Кюрасао</strong></td>
-                        <td>€5,000</td>
-                        <td>€55,000-62,000</td>
-                        <td>Мин. требования</td>
-                        <td>~2% GGR</td>
-                        <td>2-3 месяца</td>
-                    </tr>
-                    <tr>
-                        <td>Мальта MGA (Type 2)</td>
-                        <td>€5,000</td>
-                        <td>€25,000 + compliance €25K-600K</td>
-                        <td>€100,000</td>
-                        <td>5% + compliance</td>
-                        <td>12-16 недель</td>
-                    </tr>
-                    <tr>
-                        <td>Испания DGOJ</td>
-                        <td>€38,000+</td>
-                        <td>€10,000+</td>
-                        <td>€2,000,000 гарантия</td>
-                        <td>20% GGR</td>
-                        <td>6+ месяцев</td>
-                    </tr>
-                </table>
-                <p class="source">Источники: <a href="https://www.mga.org.mt/app/uploads/Guidance-Note-Licence-Fees-and-Taxation-1.pdf" target="_blank">MGA Official</a>, <a href="https://playtoday.co/blog/stats/how-much-does-it-cost-to-get-an-online-gambling-license/" target="_blank">PlayToday 2024</a>, <a href="https://gbo-licensing.com/curacao-gaming-license-fees/" target="_blank">GBO Licensing</a></p>
-                <p><strong>Рекомендация:</strong> Начать с Кюрасао (быстро, дешево), затем добавить MGA для доступа к ЕС.</p>
-            </div>
-
-            <div class="card">
-                <h3>Детализация начальных затрат (Кюрасао)</h3>
-                <table>
-                    <tr>
-                        <th>Категория</th>
-                        <th>Минимум</th>
-                        <th>Оптимально</th>
-                        <th>Комментарий</th>
-                    </tr>
-                    <tr>
-                        <td><strong>Лицензия Кюрасао</strong></td>
-                        <td>€70,000</td>
-                        <td>€80,000</td>
-                        <td>Включая регистрацию компании и первый год</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Платформа (White Label)</strong></td>
-                        <td>€15,000</td>
-                        <td>€35,000</td>
-                        <td>SoftSwiss, Altenar или аналоги</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Интеграция платежей</strong></td>
-                        <td>€10,000</td>
-                        <td>€20,000</td>
-                        <td>PSP, crypto gateway</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Разработка/кастомизация</strong></td>
-                        <td>€15,000</td>
-                        <td>€40,000</td>
-                        <td>UI/UX, мобильная версия</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Юридические услуги</strong></td>
-                        <td>€10,000</td>
+                        <td>Лицензия Кюрасао (первый год)</td>
                         <td>€25,000</td>
-                        <td>Compliance, AML, T&C</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Маркетинг (первые 6 мес)</strong></td>
-                        <td>€30,000</td>
-                        <td>€100,000</td>
-                        <td>Таргетированный на sharp community</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Операционный банкролл</strong></td>
-                        <td>€100,000</td>
-                        <td>€300,000</td>
-                        <td>Для хеджирования ставок</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Резерв на выплаты</strong></td>
                         <td>€35,000</td>
+                        <td><a href="https://europeangaming.eu/portal/latest-news/2024/07/26/164123/acquiring-a-cu" target="_blank">Источник: European Gaming</a></td>
+                    </tr>
+                    <tr>
+                        <td>Регистрация компании Кюрасао</td>
+                        <td>€8,000</td>
+                        <td>€12,000</td>
+                        <td><a href="https://gbo-licensing.com/curacao-gaming-license-fees/" target="_blank">GBO Licensing</a></td>
+                    </tr>
+                    <tr>
+                        <td>Платформа (MVP своя)</td>
+                        <td>€50,000</td>
                         <td>€100,000</td>
-                        <td>Ликвидность для клиентов</td>
+                        <td><a href="https://www.linkedin.com/pulse/sportsbook-platform-dilemma-build-buy-issue-10" target="_blank">SOFTSWISS LinkedIn</a></td>
+                    </tr>
+                    <tr>
+                        <td>Интеграция платежей</td>
+                        <td>€5,000</td>
+                        <td>€15,000</td>
+                        <td>PSP, crypto</td>
+                    </tr>
+                    <tr>
+                        <td>Юридические услуги</td>
+                        <td>€5,000</td>
+                        <td>€15,000</td>
+                        <td>T&C, AML policy</td>
+                    </tr>
+                    <tr>
+                        <td>Маркетинг (первые 3 мес)</td>
+                        <td>€15,000</td>
+                        <td>€50,000</td>
+                        <td>Таргет на sharp community</td>
+                    </tr>
+                    <tr>
+                        <td>Операционный банкролл</td>
+                        <td>€50,000</td>
+                        <td>€150,000</td>
+                        <td>Для хеджирования</td>
+                    </tr>
+                    <tr>
+                        <td>Резерв на выплаты</td>
+                        <td>€20,000</td>
+                        <td>€50,000</td>
+                        <td>Ликвидность</td>
                     </tr>
                     <tr class="highlight">
                         <td><strong>ИТОГО</strong></td>
-                        <td><strong>€285,000</strong></td>
-                        <td><strong>€700,000</strong></td>
+                        <td><strong>€178,000</strong></td>
+                        <td><strong>€427,000</strong></td>
                         <td></td>
                     </tr>
                 </table>
-                <p class="source">Источники: <a href="https://www.suffescom.com/blog/white-label-sportsbook-cost" target="_blank">Suffescom 2024</a>, <a href="https://www.softswiss.com/knowledge-base/curacao-igaming-licence-guide/" target="_blank">SoftSwiss</a></p>
             </div>
 
             <div class="card">
-                <h3>Ежемесячные операционные расходы</h3>
+                <h3>Ежемесячные операционные расходы (реалистичные для Eastern Europe)</h3>
                 <table>
+                    <tr><th>Статья</th><th>Минимум</th><th>Оптимально</th><th>Комментарий</th></tr>
                     <tr>
-                        <th>Статья</th>
-                        <th>Мин/мес</th>
-                        <th>Опт/мес</th>
+                        <td>Лицензия (€30K/12)</td>
+                        <td>€2,500</td>
+                        <td>€2,500</td>
+                        <td>После первого года</td>
                     </tr>
                     <tr>
-                        <td>Лицензия Кюрасао (€62K/12)</td>
-                        <td>€5,200</td>
-                        <td>€5,200</td>
-                    </tr>
-                    <tr>
-                        <td>Платформа (роялти/поддержка)</td>
-                        <td>€2,000</td>
-                        <td>€5,000</td>
-                    </tr>
-                    <tr>
-                        <td>Хостинг и инфраструктура</td>
+                        <td>Хостинг/инфраструктура</td>
+                        <td>€500</td>
                         <td>€1,500</td>
-                        <td>€3,000</td>
+                        <td>Cloud servers</td>
                     </tr>
                     <tr>
-                        <td>Персонал (3-5 человек)</td>
-                        <td>€12,000</td>
-                        <td>€25,000</td>
+                        <td>Персонал (3 человека, Eastern Europe)</td>
+                        <td>€4,500</td>
+                        <td>€7,500</td>
+                        <td>€1,500-2,500/чел</td>
                     </tr>
                     <tr>
-                        <td>Поддержка клиентов</td>
+                        <td>Поддержка (аутсорс или part-time)</td>
+                        <td>€1,000</td>
                         <td>€3,000</td>
-                        <td>€8,000</td>
+                        <td>-</td>
                     </tr>
                     <tr>
                         <td>Маркетинг</td>
-                        <td>€5,000</td>
-                        <td>€20,000</td>
-                    </tr>
-                    <tr>
-                        <td>Compliance/AML</td>
                         <td>€2,000</td>
-                        <td>€5,000</td>
+                        <td>€10,000</td>
+                        <td>После запуска</td>
                     </tr>
                     <tr>
-                        <td>Комиссии платежных систем (~3%)</td>
-                        <td>Переменные</td>
-                        <td>~3% от депозитов</td>
+                        <td>Compliance/бухгалтерия</td>
+                        <td>€500</td>
+                        <td>€2,000</td>
+                        <td>Аутсорс</td>
                     </tr>
                     <tr>
-                        <td>Комиссии BetInAsia (~0.1%)</td>
-                        <td>Переменные</td>
-                        <td>~0.1% от оборота</td>
+                        <td>Разное (связь, софт)</td>
+                        <td>€500</td>
+                        <td>€1,000</td>
+                        <td>-</td>
                     </tr>
                     <tr class="highlight">
                         <td><strong>ИТОГО фиксированные</strong></td>
-                        <td><strong>€30,700</strong></td>
-                        <td><strong>€71,200</strong></td>
+                        <td><strong>€11,500</strong></td>
+                        <td><strong>€27,500</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Комиссии платежных (~2%)</td>
+                        <td colspan="3">~1% от оборота (при 2x обороте депозитов)</td>
+                    </tr>
+                    <tr>
+                        <td>Комиссии BetInAsia</td>
+                        <td colspan="3">~0.1% от оборота хеджирования</td>
                     </tr>
                 </table>
+                <p class="source">Зарплаты Eastern Europe: <a href="https://jobrack.eu/blog/how-much-should-you-pay-remote-workers-in-eastern-eur" target="_blank">JobRack Guide</a>, <a href="https://igamingbusiness.com/people/igb-pentasia-salary-survey-2024-4/" target="_blank">iGB-Pentasia Salary Survey 2024</a></p>
             </div>
         </div>
     </section>
 
     <section id="revenue">
         <div class="container">
-            <h2>Модель доходов</h2>
+            <h2>Модель доходов (маржа 4%)</h2>
             
             <div class="card">
-                <h3>Прогноз доходов при разных объемах оборота</h3>
-                <table>
-                    <tr>
-                        <th>Месячный оборот</th>
-                        <th>Маржа 3.5%</th>
-                        <th>Операц. расходы</th>
-                        <th>Комиссии (~0.5%)</th>
-                        <th>Чистая прибыль</th>
-                    </tr>
-                    <tr class="warning">
-                        <td>€1,000,000</td>
-                        <td>€35,000</td>
-                        <td>€35,000</td>
-                        <td>€5,000</td>
-                        <td class="loss">-€5,000</td>
-                    </tr>
-                    <tr class="warning">
-                        <td>€3,000,000</td>
-                        <td>€105,000</td>
-                        <td>€40,000</td>
-                        <td>€15,000</td>
-                        <td class="profit">+€50,000</td>
-                    </tr>
-                    <tr class="highlight">
-                        <td>€5,000,000</td>
-                        <td>€175,000</td>
-                        <td>€50,000</td>
-                        <td>€25,000</td>
-                        <td class="profit">+€100,000</td>
-                    </tr>
-                    <tr class="highlight">
-                        <td>€10,000,000</td>
-                        <td>€350,000</td>
-                        <td>€70,000</td>
-                        <td>€50,000</td>
-                        <td class="profit">+€230,000</td>
-                    </tr>
-                    <tr>
-                        <td>€20,000,000</td>
-                        <td>€700,000</td>
-                        <td>€100,000</td>
-                        <td>€100,000</td>
-                        <td class="profit">+€500,000</td>
-                    </tr>
-                </table>
-                <p><em>* Комиссии включают: платежные системы (~3% от депозитов ≈ 1.5% от оборота при 2x обороте депозитов), BetInAsia (0.1%), другие</em></p>
+                <h3>Точка безубыточности</h3>
+                <div class="formula">
+                    Фиксированные расходы: €15,000/мес (средние)<br>
+                    Переменные расходы: ~1.5% от оборота (комиссии + хеджирование)<br>
+                    Маржа: 4% от оборота<br>
+                    <br>
+                    Чистая маржа = 4% - 1.5% = 2.5%<br>
+                    <br>
+                    <strong>Точка безубыточности = €15,000 / 2.5% = €600,000/месяц</strong><br>
+                    С запасом: ~€750,000 - €1,000,000/месяц
+                </div>
             </div>
 
             <div class="card">
-                <h3>Сравнение с традиционной моделью</h3>
-                <div class="pros-cons">
-                    <div class="pros">
-                        <h4>✅ Наша модель (кросс-беттинг)</h4>
-                        <ul>
-                            <li>Гарантированная маржа 3.5%</li>
-                            <li>Нет риска проигрыша клиентам</li>
-                            <li>Не нужны трейдеры/одсмейкеры</li>
-                            <li>Масштабируется без увеличения риска</li>
-                            <li>Можно принимать любые ставки</li>
-                        </ul>
-                    </div>
-                    <div class="cons">
-                        <h4>⚠️ Традиционная модель</h4>
-                        <ul>
-                            <li>GGR 5-7%, но волатильность высокая</li>
-                            <li>Риск убытков от sharp bettors</li>
-                            <li>Нужны дорогие трейдеры (€100K+/год)</li>
-                            <li>Нужно банить winning-игроков</li>
-                            <li>Судебные риски в некоторых юрисдикциях</li>
-                        </ul>
-                    </div>
-                </div>
+                <h3>Прогноз доходов</h3>
+                <table>
+                    <tr><th>Месячный оборот</th><th>Валовая маржа 4%</th><th>Переменные 1.5%</th><th>Фикс. расходы</th><th>Чистая прибыль</th></tr>
+                    <tr class="warning">
+                        <td>€500,000</td>
+                        <td>€20,000</td>
+                        <td>€7,500</td>
+                        <td>€15,000</td>
+                        <td class="loss">-€2,500</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>€1,000,000</td>
+                        <td>€40,000</td>
+                        <td>€15,000</td>
+                        <td>€15,000</td>
+                        <td class="profit">+€10,000</td>
+                    </tr>
+                    <tr>
+                        <td>€2,000,000</td>
+                        <td>€80,000</td>
+                        <td>€30,000</td>
+                        <td>€20,000</td>
+                        <td class="profit">+€30,000</td>
+                    </tr>
+                    <tr>
+                        <td>€5,000,000</td>
+                        <td>€200,000</td>
+                        <td>€75,000</td>
+                        <td>€25,000</td>
+                        <td class="profit">+€100,000</td>
+                    </tr>
+                    <tr>
+                        <td>€10,000,000</td>
+                        <td>€400,000</td>
+                        <td>€150,000</td>
+                        <td>€35,000</td>
+                        <td class="profit">+€215,000</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Окупаемость инвестиций</h3>
+                <table>
+                    <tr><th>Сценарий</th><th>Месячный оборот</th><th>Чистая прибыль/мес</th><th>Окупаемость (€180K)</th></tr>
+                    <tr>
+                        <td>Консервативный</td>
+                        <td>€1,000,000</td>
+                        <td>€10,000</td>
+                        <td>18 месяцев</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Базовый</td>
+                        <td>€2,000,000</td>
+                        <td>€30,000</td>
+                        <td>6 месяцев</td>
+                    </tr>
+                    <tr>
+                        <td>Оптимистичный</td>
+                        <td>€5,000,000</td>
+                        <td>€100,000</td>
+                        <td>2 месяца</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </section>
 
-    <section id="breakeven">
+    <section id="cac">
         <div class="container">
-            <h2>Точка безубыточности</h2>
+            <h2>Customer Acquisition Cost (CAC) и маркетинг</h2>
             
             <div class="card">
-                <h3>Расчет</h3>
-                <div class="formula">
-                    Фиксированные расходы в месяц: €35,000 (минимум)<br>
-                    Переменные расходы: ~0.5% от оборота<br>
-                    Маржа: 3.5% от оборота<br>
-                    <br>
-                    Чистая маржа = 3.5% - 0.5% = 3.0%<br>
-                    <br>
-                    Точка безубыточности = €35,000 / 3.0% = <strong>€1,167,000/месяц</strong><br>
-                    <br>
-                    С учетом резерва и роста расходов: <strong>~€1.5-2M/месяц</strong>
-                </div>
+                <h3>Индустриальные бенчмарки CAC</h3>
+                <table>
+                    <tr><th>Сегмент</th><th>CAC</th><th>LTV</th><th>LTV/CAC</th><th>Источник</th></tr>
+                    <tr>
+                        <td>Sports Bettors (среднее)</td>
+                        <td>$300-500</td>
+                        <td>$2,500</td>
+                        <td>5-8x</td>
+                        <td><a href="https://www.linkedin.com/posts/gambling-tech-unpacked_the-true-cost-of-acquis" target="_blank">Gambling Tech Unpacked</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sports Bettors (пик, Super Bowl)</td>
+                        <td>$800+</td>
+                        <td>$2,500</td>
+                        <td>~3x</td>
+                        <td><a href="https://www.linkedin.com/posts/gambling-tech-unpacked_the-true-cost-of-acquis" target="_blank">Gambling Tech Unpacked</a></td>
+                    </tr>
+                    <tr>
+                        <td>Casino Players</td>
+                        <td>$250-400</td>
+                        <td>$1,500-2,000</td>
+                        <td>4-6x</td>
+                        <td><a href="https://blask.com/blog/customer-acquisition-cost-in-the-igaming-industry/" target="_blank">Blask</a></td>
+                    </tr>
+                    <tr>
+                        <td>Poker Players</td>
+                        <td>$400-600</td>
+                        <td>$2,000+</td>
+                        <td>3-5x</td>
+                        <td><a href="https://www.linkedin.com/posts/gambling-tech-unpacked_the-true-cost-of-acquis" target="_blank">Gambling Tech Unpacked</a></td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Sharp Bettors (наш таргет)</td>
+                        <td>$50-150*</td>
+                        <td>$500-1000**</td>
+                        <td>5-10x</td>
+                        <td>*Нишевое комьюнити</td>
+                    </tr>
+                </table>
+                <p><em>* Sharp bettors ищут букмекеров сами, CAC ниже через форумы и word-of-mouth</em></p>
+                <p><em>** LTV ниже т.к. мы зарабатываем только спред, но риск нулевой</em></p>
             </div>
 
             <div class="card">
-                <h3>Окупаемость начальных инвестиций</h3>
+                <h3>Примеры CAC крупных операторов</h3>
                 <table>
+                    <tr><th>Компания</th><th>CAC тренд 2024</th><th>Детали</th><th>Источник</th></tr>
                     <tr>
-                        <th>Сценарий</th>
-                        <th>Месячный оборот</th>
-                        <th>Чистая прибыль/мес</th>
-                        <th>Окупаемость (€285K)</th>
+                        <td><strong>DraftKings</strong></td>
+                        <td>-20% YoY</td>
+                        <td>+14% новых клиентов при снижении CAC</td>
+                        <td><a href="https://draftkings.gcs-web.com/static-files/436fd512-12f4-4c0e-b4ef-87472a2f7a8d" target="_blank">Q3 2024 Shareholder Letter</a></td>
                     </tr>
                     <tr>
-                        <td>Консервативный</td>
-                        <td>€2,000,000</td>
-                        <td>€25,000</td>
-                        <td>11-12 месяцев</td>
-                    </tr>
-                    <tr class="highlight">
-                        <td>Базовый</td>
-                        <td>€5,000,000</td>
-                        <td>€100,000</td>
-                        <td>3 месяца</td>
+                        <td><strong>BetVictor</strong></td>
+                        <td>~$400</td>
+                        <td>LTV ~$2,500, фокус на качество трафика</td>
+                        <td><a href="https://www.trafficguard.ai/blog/maximising-first-time-depositors-how-blockin" target="_blank">TrafficGuard Case Study</a></td>
                     </tr>
                     <tr>
-                        <td>Оптимистичный</td>
-                        <td>€10,000,000</td>
-                        <td>€230,000</td>
-                        <td>1.5 месяца</td>
+                        <td><strong>Средний iGaming</strong></td>
+                        <td>$280-1,400</td>
+                        <td>Зависит от канала и региона</td>
+                        <td><a href="https://blask.com/blog/customer-acquisition-cost-in-the-igaming-industry/" target="_blank">Blask Research</a></td>
                     </tr>
                 </table>
             </div>
 
             <div class="card">
-                <h3>Реалистичность объемов</h3>
-                <p>Для контекста:</p>
-                <ul>
-                    <li><strong>Pinnacle</strong> обрабатывает ~$500M+ в месяц на спортивных ставках</li>
-                    <li><strong>Средний нишевый букмекер</strong> в Европе: €5-20M/месяц</li>
-                    <li><strong>Sharp betting community</strong> на форумах: 10,000+ активных игроков</li>
-                    <li>Средняя ставка sharp bettor: €500-2000</li>
-                    <li>100 активных клиентов × 50 ставок/месяц × €1000 = <strong>€5M/месяц</strong></li>
-                </ul>
-                <p><strong>Вывод:</strong> €5M/месяц достижимо при правильном позиционировании в нише.</p>
+                <h3>Наша маркетинговая стратегия: Агрессивное позиционирование</h3>
+                <blockquote>
+                    <strong>"Единственный букмекер с широкой линией, который НЕ БАНИТ победителей"</strong>
+                </blockquote>
+                <h4>Каналы привлечения:</h4>
+                <table>
+                    <tr><th>Канал</th><th>CAC</th><th>Объем</th><th>Приоритет</th></tr>
+                    <tr>
+                        <td>Betting форумы (SBR, BettingTalk)</td>
+                        <td>€20-50</td>
+                        <td>Низкий, но качественный</td>
+                        <td><span class="badge badge-green">Высокий</span></td>
+                    </tr>
+                    <tr>
+                        <td>Twitter/X betting community</td>
+                        <td>€30-80</td>
+                        <td>Средний</td>
+                        <td><span class="badge badge-green">Высокий</span></td>
+                    </tr>
+                    <tr>
+                        <td>Affiliate партнеры (нишевые)</td>
+                        <td>€100-200 (CPA)</td>
+                        <td>Средний</td>
+                        <td><span class="badge badge-blue">Средний</span></td>
+                    </tr>
+                    <tr>
+                        <td>SEO "sharp betting", "no limits bookmaker"</td>
+                        <td>€50-100</td>
+                        <td>Растет со временем</td>
+                        <td><span class="badge badge-blue">Средний</span></td>
+                    </tr>
+                    <tr>
+                        <td>Paid Social (Facebook/Insta)</td>
+                        <td>€200-400</td>
+                        <td>Высокий</td>
+                        <td><span class="badge badge-red">Низкий (дорого)</span></td>
+                    </tr>
+                </table>
+                <p><strong>Целевой CAC:</strong> €80-120 (средневзвешенный)</p>
             </div>
         </div>
     </section>
 
     <section id="risks">
         <div class="container">
-            <h2>Риски и митигация</h2>
+            <h2>Риски и заключение</h2>
             
             <div class="grid">
                 <div class="card">
-                    <h3>🔴 Высокие риски</h3>
-                    <table>
-                        <tr>
-                            <th>Риск</th>
-                            <th>Митигация</th>
-                        </tr>
-                        <tr>
-                            <td>Блокировка счетов на хедж-платформах</td>
-                            <td>Диверсификация: 5+ источников ликвидности, использование брокеров</td>
-                        </tr>
-                        <tr>
-                            <td>Регуляторные изменения</td>
-                            <td>Мониторинг законодательства, резервы на релокацию</td>
-                        </tr>
-                        <tr>
-                            <td>Технические сбои</td>
-                            <td>Резервирование, SLA с провайдерами</td>
-                        </tr>
-                        <tr>
-                            <td>Мошенничество клиентов</td>
-                            <td>KYC/AML, лимиты для новых клиентов</td>
-                        </tr>
-                    </table>
+                    <h3>Высокие риски</h3>
+                    <ul>
+                        <li><strong>Блокировка hedge-аккаунтов</strong> - диверсификация 5+ источников</li>
+                        <li><strong>Регуляторные изменения</strong> - мониторинг, резервы на релокацию</li>
+                        <li><strong>Технические сбои</strong> - резервирование, SLA</li>
+                    </ul>
                 </div>
-                
                 <div class="card">
-                    <h3>🟡 Средние риски</h3>
-                    <table>
-                        <tr>
-                            <th>Риск</th>
-                            <th>Митигация</th>
-                        </tr>
-                        <tr>
-                            <td>Конкуренция (Pinnacle, другие)</td>
-                            <td>Фокус на нишу, лучший сервис</td>
-                        </tr>
-                        <tr>
-                            <td>Изменение маржи источников</td>
-                            <td>Гибкое ценообразование, резервы</td>
-                        </tr>
-                        <tr>
-                            <td>Репутационные риски</td>
-                            <td>Быстрые выплаты, прозрачность</td>
-                        </tr>
-                        <tr>
-                            <td>Валютные риски</td>
-                            <td>Хеджирование, мультивалютность</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            
-            <div class="card">
-                <h3>⚠️ Главный риск: Зависимость от хедж-источников</h3>
-                <p>Если BetInAsia, Pinnacle или испанские букмекеры найдут способ ограничить нас, бизнес-модель рухнет.</p>
-                <h4>Стратегии защиты:</h4>
-                <ul>
-                    <li>Использовать 5+ разных брокеров и букмекеров</li>
-                    <li>Не концентрировать более 20% объема на одном источнике</li>
-                    <li>Создать сеть аффилированных аккаунтов (легально, через партнеров)</li>
-                    <li>Резервный фонд на 6 месяцев операционных расходов</li>
-                    <li>План B: переход на традиционную модель с risk management</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="timeline">
-        <div class="container">
-            <h2>План запуска</h2>
-            
-            <div class="card">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h3>Месяц 1-2: Подготовка</h3>
-                        <ul>
-                            <li>Регистрация компании на Кюрасао</li>
-                            <li>Подача заявки на лицензию</li>
-                            <li>Выбор white-label провайдера</li>
-                            <li>Открытие счетов на BetInAsia, Pinnacle</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <h3>Месяц 3-4: Разработка</h3>
-                        <ul>
-                            <li>Кастомизация платформы</li>
-                            <li>Интеграция платежных систем</li>
-                            <li>Настройка системы хеджирования</li>
-                            <li>Тестирование</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <h3>Месяц 5: Soft Launch</h3>
-                        <ul>
-                            <li>Получение лицензии</li>
-                            <li>Приглашение 20-50 beta-клиентов</li>
-                            <li>Отладка процессов</li>
-                            <li>Сбор обратной связи</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <h3>Месяц 6+: Масштабирование</h3>
-                        <ul>
-                            <li>Публичный запуск</li>
-                            <li>Маркетинг в sharp betting community</li>
-                            <li>Расширение линии событий</li>
-                            <li>Оптимизация маржи</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>KPI первого года</h3>
-                <table>
-                    <tr>
-                        <th>Квартал</th>
-                        <th>Активные клиенты</th>
-                        <th>Месячный оборот</th>
-                        <th>Целевая прибыль</th>
-                    </tr>
-                    <tr>
-                        <td>Q1</td>
-                        <td>50</td>
-                        <td>€500,000</td>
-                        <td>-€50,000 (инвестиции)</td>
-                    </tr>
-                    <tr>
-                        <td>Q2</td>
-                        <td>150</td>
-                        <td>€2,000,000</td>
-                        <td>€25,000</td>
-                    </tr>
-                    <tr>
-                        <td>Q3</td>
-                        <td>300</td>
-                        <td>€5,000,000</td>
-                        <td>€100,000</td>
-                    </tr>
-                    <tr class="highlight">
-                        <td>Q4</td>
-                        <td>500</td>
-                        <td>€8,000,000</td>
-                        <td>€180,000</td>
-                    </tr>
-                    <tr class="highlight">
-                        <td><strong>Год 1 итого</strong></td>
-                        <td></td>
-                        <td></td>
-                        <td><strong>€255,000</strong></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <section id="conclusion">
-        <div class="container">
-            <h2>Заключение: Целесообразность проекта</h2>
-            
-            <div class="card">
-                <div class="grid">
-                    <div>
-                        <h3 class="profit">✅ Аргументы "ЗА"</h3>
-                        <ul>
-                            <li>Низкий порог входа (€285K минимум)</li>
-                            <li>Гарантированная маржа 3.5% без риска</li>
-                            <li>Незанятая ниша (sharp-friendly)</li>
-                            <li>Судебные прецеденты в Испании</li>
-                            <li>Растущий рынок (+11.7% YoY)</li>
-                            <li>Быстрая окупаемость (3-12 месяцев)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="loss">❌ Аргументы "ПРОТИВ"</h3>
-                        <ul>
-                            <li>Зависимость от хедж-источников</li>
-                            <li>Риск блокировки аккаунтов</li>
-                            <li>Регуляторная неопределенность</li>
-                            <li>Конкуренция с Pinnacle</li>
-                            <li>Операционная сложность</li>
-                            <li>Ограниченный потолок роста</li>
-                        </ul>
-                    </div>
+                    <h3>Средние риски</h3>
+                    <ul>
+                        <li><strong>Конкуренция</strong> - уникальное позиционирование</li>
+                        <li><strong>Репутация</strong> - быстрые выплаты, прозрачность</li>
+                        <li><strong>Масштабирование</strong> - поэтапный рост</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="card" style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);">
-                <h3>💡 Рекомендация</h3>
-                <p><strong>Проект ЦЕЛЕСООБРАЗЕН</strong> при соблюдении условий:</p>
+                <h3>Заключение: Проект ЦЕЛЕСООБРАЗЕН</h3>
+                <table>
+                    <tr><th>Параметр</th><th>Значение</th></tr>
+                    <tr><td>Минимальные инвестиции</td><td><strong>€180,000</strong></td></tr>
+                    <tr><td>Оптимальные инвестиции</td><td><strong>€400,000</strong></td></tr>
+                    <tr><td>Точка безубыточности</td><td><strong>€600K-1M/месяц оборота</strong></td></tr>
+                    <tr><td>Целевая маржа</td><td><strong>4% от оборота</strong></td></tr>
+                    <tr><td>Окупаемость (базовый сценарий)</td><td><strong>6 месяцев</strong></td></tr>
+                    <tr><td>ROI первый год</td><td><strong>100-200%</strong></td></tr>
+                </table>
+                <h4>Ключевые условия успеха:</h4>
                 <ol>
-                    <li>Начальный капитал не менее <strong>€300,000</strong></li>
-                    <li>Диверсификация хедж-источников (минимум 5)</li>
+                    <li>Агрессивный маркетинг "не баним победителей"</li>
+                    <li>Качественная интеграция с hedge-источниками</li>
+                    <li>Диверсификация: минимум 5 источников ликвидности</li>
                     <li>Резерв на 6 месяцев операционных расходов</li>
-                    <li>План выхода при потере хедж-каналов</li>
-                    <li>Фокус на нише sharp bettors с правильным маркетингом</li>
+                    <li>Поэтапный переход Кюрасао -> Мальта</li>
                 </ol>
-                <p><strong>ROI при базовом сценарии:</strong> 85-90% годовых (€255K прибыли на €300K инвестиций)</p>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>Euro Sharp Betting - Бизнес-план 2024</p>
-            <p>Данный документ носит информационный характер и не является инвестиционной рекомендацией.</p>
-            <p>Все цифры основаны на публичных источниках и оценках на ноябрь 2024.</p>
+            <p>Euro Sharp Betting - Бизнес-план | Ноябрь 2024</p>
+            <p>Все цифры основаны на публичных источниках. Ссылки на источники указаны в документе.</p>
         </div>
     </footer>
 </body>
 </html>
-<!-- Fri Nov 28 07:38:54 PM UTC 2025 -->
