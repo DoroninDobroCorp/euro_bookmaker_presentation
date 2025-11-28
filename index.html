@@ -103,8 +103,8 @@
                     <span class="label">Минимальные начальные затраты (Кюрасао)</span>
                 </div>
                 <div class="stat-box">
-                    <span class="number">€371-420K</span>
-                    <span class="label">Оборот для безубыточности (год 1)</span>
+                    <span class="number">~€400K</span>
+                    <span class="label">Оборот для безубыточности/мес</span>
                 </div>
             </div>
             
@@ -374,17 +374,16 @@
                     <tr><td>Персонал (3 чел, Eastern EU)</td><td>€4,500</td><td>€1,500 × 3</td></tr>
                     <tr><td>Хостинг + инфра</td><td>€500</td><td></td></tr>
                     <tr><td>Поддержка</td><td>€1,000</td><td></td></tr>
-                    <tr><td>Маркетинг</td><td>€3,000</td><td></td></tr>
                     <tr><td>Бухгалтерия + AML</td><td>€1,000</td><td></td></tr>
                     <tr><td>Разное</td><td>€500</td><td></td></tr>
-                    <tr class="highlight"><td><strong>ИТОГО фикс/мес</strong></td><td><strong>€14,700</strong></td><td></td></tr>
+                    <tr class="highlight"><td><strong>Фикс без маркетинга</strong></td><td><strong>€11,700</strong></td><td></td></tr>
+                    <tr class="warning"><td>+ Маркетинг (переменный)</td><td colspan="2">~€3,400 при €400K оборота</td></tr>
                 </table>
                 
                 <h4>Точка безубыточности</h4>
                 <div class="formula">
-                    Фикс: €14,700/мес ÷ Чистая маржа: 3.5% = <strong>€420,000/мес оборота</strong>
+                    При обороте ~<strong>€430,000/мес</strong> выходим в ноль.
                 </div>
-                <p>При обороте €420K/мес выходим в ноль. Выше — прибыль.</p>
             </div>
 
             <div class="card" style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);">
@@ -410,16 +409,16 @@
                     <tr><td>Персонал (3 чел)</td><td>€4,500</td><td>€4,500</td></tr>
                     <tr><td>Хостинг + инфра</td><td>€500</td><td>€500</td></tr>
                     <tr><td>Поддержка</td><td>€1,000</td><td>€1,000</td></tr>
-                    <tr><td>Маркетинг</td><td>€3,000</td><td>€3,000</td></tr>
                     <tr><td>Бухгалтерия + AML</td><td>€1,000</td><td>€1,000</td></tr>
                     <tr><td>Разное</td><td>€500</td><td>€500</td></tr>
-                    <tr class="highlight"><td><strong>ИТОГО фикс/мес</strong></td><td><strong>€13,000</strong></td><td><strong>€16,000</strong></td></tr>
+                    <tr class="highlight"><td><strong>Фикс без маркетинга</strong></td><td><strong>€10,000</strong></td><td><strong>€12,500</strong></td></tr>
+                    <tr class="warning"><td>+ Маркетинг (переменный)</td><td colspan="2">~€3,400 при €400K оборота. <a href="#cac">Подробнее →</a></td></tr>
                 </table>
                 
                 <h4>Точка безубыточности</h4>
                 <div class="formula">
-                    <strong>Год 1:</strong> €13,000 ÷ 3.5% = <strong>€371,000/мес</strong><br>
-                    <strong>Год 2+:</strong> €16,000 ÷ 3.5% = <strong>€457,000/мес</strong>
+                    При обороте ~<strong>€400,000/мес</strong> выходим в ноль.<br>
+                    <em>Маркетинг = переменная величина, зависит от целевого оборота. См. <a href="#cac">Unit Economics</a>.</em>
                 </div>
             </div>
 
@@ -430,10 +429,8 @@
                     <tr><td>На старт всего</td><td>€153,000</td><td><strong>€118,000</strong></td></tr>
                     <tr><td>— разовые (сгорают)</td><td>€48,000</td><td><strong>€43,000</strong></td></tr>
                     <tr><td>— оборотные (работают)</td><td>€105,000</td><td>€75,000</td></tr>
-                    <tr><td>Фикс/мес (год 1)</td><td>€14,700</td><td><strong>€13,000</strong></td></tr>
-                    <tr><td>Фикс/мес (год 2+)</td><td><strong>€14,700</strong></td><td>€16,000</td></tr>
-                    <tr><td>Безубыточность (год 1)</td><td>€420K/мес</td><td><strong>€371K/мес</strong></td></tr>
-                    <tr><td>Безубыточность (год 2+)</td><td><strong>€420K/мес</strong></td><td>€457K/мес</td></tr>
+                    <tr><td>Фикс/мес (без маркетинга)</td><td>€11,700</td><td><strong>€10,000</strong></td></tr>
+                    <tr><td>Безубыточность</td><td>~€430K/мес</td><td><strong>~€400K/мес</strong></td></tr>
                     <tr><td>Срок запуска</td><td>5-7 мес</td><td><strong>3-4 мес</strong></td></tr>
                     <tr><td>Свой софт</td><td>Нужен аудит €25K</td><td><strong>Без аудита</strong></td></tr>
                     <tr><td>Доступ к ЕС</td><td><strong>Полный (EU passport)</strong></td><td>Ограничен</td></tr>
@@ -503,40 +500,40 @@
 
             <div class="card">
                 <h3>Прогноз доходов (Кюрасао, год 1)</h3>
+                <p><strong>Важно:</strong> Маркетинг — переменная величина, зависит от целевого оборота. См. секцию <a href="#cac">Unit Economics</a>.</p>
                 <table>
-                    <tr><th>Оборот/мес</th><th>Чистая маржа 3.5%</th><th>Фикс €13,000</th><th>Прибыль</th></tr>
+                    <tr><th>Оборот/мес</th><th>Маржа 3.5%</th><th>Фикс (без маркетинга)</th><th>Маркетинг*</th><th>Прибыль</th></tr>
                     <tr class="warning">
                         <td>€300,000</td>
                         <td>€10,500</td>
-                        <td>€13,000</td>
-                        <td class="loss">−€2,500</td>
+                        <td>€10,000</td>
+                        <td>€2,500</td>
+                        <td class="loss">−€2,000</td>
                     </tr>
                     <tr class="highlight">
-                        <td>€371,000</td>
-                        <td>€13,000</td>
-                        <td>€13,000</td>
-                        <td><strong>€0 (break-even)</strong></td>
+                        <td>€400,000</td>
+                        <td>€14,000</td>
+                        <td>€10,000</td>
+                        <td>€3,400</td>
+                        <td><strong>≈€0 (break-even)</strong></td>
                     </tr>
                     <tr>
                         <td>€500,000</td>
                         <td>€17,500</td>
-                        <td>€13,000</td>
-                        <td class="profit">+€4,500</td>
+                        <td>€10,000</td>
+                        <td>€4,200</td>
+                        <td class="profit">+€3,300</td>
                     </tr>
                     <tr>
                         <td>€1,000,000</td>
                         <td>€35,000</td>
-                        <td>€13,000</td>
-                        <td class="profit">+€22,000</td>
-                    </tr>
-                    <tr>
-                        <td>€2,000,000</td>
-                        <td>€70,000</td>
-                        <td>€16,000</td>
-                        <td class="profit">+€54,000</td>
+                        <td>€10,000</td>
+                        <td>€8,400</td>
+                        <td class="profit">+€16,600</td>
                     </tr>
                 </table>
-                <p><em>Год 2+: фикс растёт до €16,000 (лицензия €60K), break-even €457K</em></p>
+                <p><em>* Маркетинг = (Оборот ÷ €3,000 на клиента) × 17% churn × €150 CAC. Подробнее в <a href="#cac">Unit Economics</a>.</em></p>
+                <p><em>Год 2+: фикс растёт на €2,500 (лицензия €60K вместо €30K)</em></p>
             </div>
 
             <div class="card">
@@ -545,27 +542,27 @@
                     <tr><th>Сценарий</th><th>Оборот/мес</th><th>Прибыль/мес</th><th>Окупаемость</th></tr>
                     <tr class="warning">
                         <td>Минимум</td>
-                        <td>€371,000</td>
-                        <td>€0</td>
+                        <td>€400,000</td>
+                        <td>≈€0</td>
                         <td>Никогда (break-even)</td>
                     </tr>
                     <tr>
                         <td>Консерватив</td>
                         <td>€500,000</td>
-                        <td>€4,500</td>
-                        <td>26 месяцев</td>
+                        <td>€3,300</td>
+                        <td>36 месяцев</td>
                     </tr>
                     <tr class="highlight">
                         <td>Базовый</td>
                         <td>€1,000,000</td>
-                        <td>€22,000</td>
-                        <td><strong>5.5 месяцев</strong></td>
+                        <td>€16,600</td>
+                        <td><strong>7 месяцев</strong></td>
                     </tr>
                     <tr>
                         <td>Оптимистичный</td>
                         <td>€2,000,000</td>
-                        <td>€54,000</td>
-                        <td>2 месяца</td>
+                        <td>€41,600</td>
+                        <td>3 месяца</td>
                     </tr>
                 </table>
             </div>
