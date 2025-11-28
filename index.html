@@ -574,117 +574,108 @@
 
     <section id="cac">
         <div class="container">
-            <h2>Customer Acquisition Cost (CAC) и маркетинг</h2>
+            <h2>Unit Economics: связь маркетинга и оборота</h2>
             
             <div class="card">
-                <h3>Индустриальные бенчмарки CAC</h3>
+                <h3>Базовые допущения</h3>
                 <table>
-                    <tr><th>Сегмент</th><th>CAC</th><th>LTV</th><th>LTV/CAC</th><th>Источник</th></tr>
-                    <tr>
-                        <td>Sports Bettors (среднее)</td>
-                        <td>$300-500</td>
-                        <td>$2,500</td>
-                        <td>5-8x</td>
-                        <td><a href="https://www.linkedin.com/posts/gambling-tech-unpacked_the-true-cost-of-acquis" target="_blank">Gambling Tech Unpacked</a></td>
-                    </tr>
-                    <tr>
-                        <td>Sports Bettors (пик, Super Bowl)</td>
-                        <td>$800+</td>
-                        <td>$2,500</td>
-                        <td>~3x</td>
-                        <td><a href="https://www.linkedin.com/posts/gambling-tech-unpacked_the-true-cost-of-acquis" target="_blank">Gambling Tech Unpacked</a></td>
-                    </tr>
-                    <tr>
-                        <td>Casino Players</td>
-                        <td>$250-400</td>
-                        <td>$1,500-2,000</td>
-                        <td>4-6x</td>
-                        <td><a href="https://blask.com/blog/customer-acquisition-cost-in-the-igaming-industry/" target="_blank">Blask</a></td>
-                    </tr>
-                    <tr>
-                        <td>Poker Players</td>
-                        <td>$400-600</td>
-                        <td>$2,000+</td>
-                        <td>3-5x</td>
-                        <td><a href="https://www.linkedin.com/posts/gambling-tech-unpacked_the-true-cost-of-acquis" target="_blank">Gambling Tech Unpacked</a></td>
+                    <tr><th>Параметр</th><th>Консерватив</th><th>Оптимист</th><th>Пояснение</th></tr>
+                    <tr><td>CAC (стоимость клиента)</td><td>€150</td><td>€80</td><td>Sharp bettors через форумы, twitter</td></tr>
+                    <tr><td>Оборот клиента/мес</td><td>€3,000</td><td>€5,000</td><td>Sharp bettor ставит много</td></tr>
+                    <tr><td>Retention</td><td>6 мес</td><td>12 мес</td><td>Нас не банят → лояльность выше</td></tr>
+                    <tr><td>LTV (оборот)</td><td>€18,000</td><td>€60,000</td><td>= оборот × retention</td></tr>
+                    <tr><td>LTV (прибыль)</td><td>€630</td><td>€2,100</td><td>= LTV оборот × 3.5%</td></tr>
+                    <tr class="highlight"><td><strong>LTV/CAC</strong></td><td><strong>4.2x</strong></td><td><strong>26x</strong></td><td>Индустрия: 3-7x норма</td></tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Сколько маркетинга нужно для оборота?</h3>
+                <div class="formula">
+                    <strong>Маркетинг/мес = (Целевой оборот ÷ Оборот на клиента) × CAC ÷ Retention(мес)</strong>
+                </div>
+                
+                <h4>Сценарий: достичь €500K/мес оборота</h4>
+                <table>
+                    <tr><th>Параметр</th><th>Консерватив</th><th>Оптимист</th></tr>
+                    <tr><td>Целевой оборот</td><td colspan="2">€500,000/мес</td></tr>
+                    <tr><td>Оборот на клиента</td><td>€3,000</td><td>€5,000</td></tr>
+                    <tr><td>Нужно активных клиентов</td><td>167</td><td>100</td></tr>
+                    <tr><td>Churn/мес (при retention 6/12 мес)</td><td>17%</td><td>8%</td></tr>
+                    <tr><td>Нужно привлекать/мес</td><td>28</td><td>8</td></tr>
+                    <tr><td>CAC</td><td>€150</td><td>€80</td></tr>
+                    <tr class="highlight"><td><strong>Маркетинг/мес</strong></td><td><strong>€4,200</strong></td><td><strong>€640</strong></td></tr>
+                </table>
+                <p><em>+ Стартовый набор базы: 100 клиентов × CAC = €8,000-15,000 (разово)</em></p>
+            </div>
+
+            <div class="card">
+                <h3>Точка безубыточности с учётом маркетинга</h3>
+                <p>Маркетинг — это не фикс, а функция от желаемого роста. Пересчитаем:</p>
+                <table>
+                    <tr><th>Оборот/мес</th><th>Маржа 3.5%</th><th>Фикс (без маркетинга)</th><th>Маркетинг</th><th>Прибыль</th></tr>
+                    <tr class="warning">
+                        <td>€300,000</td>
+                        <td>€10,500</td>
+                        <td>€10,000</td>
+                        <td>€2,500</td>
+                        <td class="loss">−€2,000</td>
                     </tr>
                     <tr class="highlight">
-                        <td>Sharp Bettors (наш таргет)</td>
-                        <td>$50-150*</td>
-                        <td>$500-1000**</td>
-                        <td>5-10x</td>
-                        <td>*Нишевое комьюнити</td>
+                        <td>€400,000</td>
+                        <td>€14,000</td>
+                        <td>€10,000</td>
+                        <td>€3,400</td>
+                        <td><strong>€600</strong></td>
+                    </tr>
+                    <tr>
+                        <td>€500,000</td>
+                        <td>€17,500</td>
+                        <td>€10,000</td>
+                        <td>€4,200</td>
+                        <td class="profit">+€3,300</td>
+                    </tr>
+                    <tr>
+                        <td>€1,000,000</td>
+                        <td>€35,000</td>
+                        <td>€10,000</td>
+                        <td>€8,400</td>
+                        <td class="profit">+€16,600</td>
                     </tr>
                 </table>
-                <p><em>* Sharp bettors ищут букмекеров сами, CAC ниже через форумы и word-of-mouth</em></p>
-                <p><em>** LTV ниже т.к. мы зарабатываем только спред, но риск нулевой</em></p>
+                <p><em>Фикс без маркетинга = €13,000 − €3,000 = €10,000. Маркетинг считаем отдельно как % от оборота.</em></p>
+                <p><strong>Реальная точка безубыточности: ~€400K/мес</strong> (не €371K)</p>
             </div>
 
-            <div class="card">
-                <h3>Примеры CAC крупных операторов</h3>
+            <div class="card" style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);">
+                <h3>Итоговая модель (Кюрасао, год 1, консерватив)</h3>
                 <table>
-                    <tr><th>Компания</th><th>CAC тренд 2024</th><th>Детали</th><th>Источник</th></tr>
-                    <tr>
-                        <td><strong>DraftKings</strong></td>
-                        <td>-20% YoY</td>
-                        <td>+14% новых клиентов при снижении CAC</td>
-                        <td><a href="https://draftkings.gcs-web.com/static-files/436fd512-12f4-4c0e-b4ef-87472a2f7a8d" target="_blank">Q3 2024 Shareholder Letter</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>BetVictor</strong></td>
-                        <td>~$400</td>
-                        <td>LTV ~$2,500, фокус на качество трафика</td>
-                        <td><a href="https://www.trafficguard.ai/blog/maximising-first-time-depositors-how-blockin" target="_blank">TrafficGuard Case Study</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Средний iGaming</strong></td>
-                        <td>$280-1,400</td>
-                        <td>Зависит от канала и региона</td>
-                        <td><a href="https://blask.com/blog/customer-acquisition-cost-in-the-igaming-industry/" target="_blank">Blask Research</a></td>
-                    </tr>
+                    <tr><th>Статья</th><th>€/мес</th><th>% от оборота €500K</th></tr>
+                    <tr><td>Выручка (маржа 3.5%)</td><td class="profit">+€17,500</td><td>3.5%</td></tr>
+                    <tr><td>Лицензия</td><td>−€2,500</td><td>0.5%</td></tr>
+                    <tr><td>Персонал</td><td>−€4,500</td><td>0.9%</td></tr>
+                    <tr><td>Инфра + поддержка + разное</td><td>−€3,000</td><td>0.6%</td></tr>
+                    <tr><td>Маркетинг</td><td>−€4,200</td><td>0.84%</td></tr>
+                    <tr class="highlight"><td><strong>Чистая прибыль</strong></td><td><strong>+€3,300</strong></td><td><strong>0.66%</strong></td></tr>
                 </table>
+                <p><strong>При €500K оборота зарабатываем €3,300/мес. Окупаемость €118K = 36 мес.</strong></p>
+                <p><strong>При €1M оборота зарабатываем €16,600/мес. Окупаемость = 7 мес.</strong></p>
             </div>
 
             <div class="card">
-                <h3>Наша маркетинговая стратегия: Агрессивное позиционирование</h3>
+                <h3>Каналы привлечения sharp bettors</h3>
                 <blockquote>
-                    <strong>"Единственный букмекер с широкой линией, который НЕ БАНИТ победителей"</strong>
+                    <strong>"Единственный букмекер, который НЕ БАНИТ победителей"</strong>
                 </blockquote>
-                <h4>Каналы привлечения:</h4>
                 <table>
-                    <tr><th>Канал</th><th>CAC</th><th>Объем</th><th>Приоритет</th></tr>
-                    <tr>
-                        <td>Betting форумы (SBR, BettingTalk)</td>
-                        <td>€20-50</td>
-                        <td>Низкий, но качественный</td>
-                        <td><span class="badge badge-green">Высокий</span></td>
-                    </tr>
-                    <tr>
-                        <td>Twitter/X betting community</td>
-                        <td>€30-80</td>
-                        <td>Средний</td>
-                        <td><span class="badge badge-green">Высокий</span></td>
-                    </tr>
-                    <tr>
-                        <td>Affiliate партнеры (нишевые)</td>
-                        <td>€100-200 (CPA)</td>
-                        <td>Средний</td>
-                        <td><span class="badge badge-blue">Средний</span></td>
-                    </tr>
-                    <tr>
-                        <td>SEO "sharp betting", "no limits bookmaker"</td>
-                        <td>€50-100</td>
-                        <td>Растет со временем</td>
-                        <td><span class="badge badge-blue">Средний</span></td>
-                    </tr>
-                    <tr>
-                        <td>Paid Social (Facebook/Insta)</td>
-                        <td>€200-400</td>
-                        <td>Высокий</td>
-                        <td><span class="badge badge-red">Низкий (дорого)</span></td>
-                    </tr>
+                    <tr><th>Канал</th><th>CAC</th><th>Качество</th></tr>
+                    <tr><td>Betting форумы (SBR, BettingTalk)</td><td>€50-80</td><td><span class="badge badge-green">Высокое</span></td></tr>
+                    <tr><td>Twitter/X betting community</td><td>€60-100</td><td><span class="badge badge-green">Высокое</span></td></tr>
+                    <tr><td>Telegram каналы</td><td>€40-80</td><td><span class="badge badge-green">Высокое</span></td></tr>
+                    <tr><td>Word-of-mouth (реферал)</td><td>€30-50</td><td><span class="badge badge-green">Высокое</span></td></tr>
+                    <tr><td>SEO</td><td>€80-150</td><td><span class="badge badge-blue">Среднее</span></td></tr>
                 </table>
-                <p><strong>Целевой CAC:</strong> €80-120 (средневзвешенный)</p>
+                <p><em>Sharp bettors — нишевое комьюнити. Они сами ищут конторы, CAC ниже чем у recreational.</em></p>
             </div>
         </div>
     </section>
@@ -715,12 +706,15 @@
             <div class="card" style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);">
                 <h3>Заключение: Проект ЦЕЛЕСООБРАЗЕН</h3>
                 <table>
-                    <tr><th>Параметр</th><th>Кюрасао</th><th>Мальта</th></tr>
-                    <tr><td>На старт</td><td><strong>€118,000</strong></td><td>€153,000</td></tr>
-                    <tr><td>Фикс/мес (год 1)</td><td><strong>€13,000</strong></td><td>€14,700</td></tr>
-                    <tr><td>Безубыточность (год 1)</td><td><strong>€371K/мес</strong></td><td>€420K/мес</td></tr>
-                    <tr><td>Чистая маржа</td><td colspan="2"><strong>3.5%</strong> (4% валовая − 0.5% PSP)</td></tr>
-                    <tr><td>Окупаемость при €1M</td><td colspan="2"><strong>5-6 месяцев</strong></td></tr>
+                    <tr><th>Параметр</th><th>Значение</th></tr>
+                    <tr><td>Стартовые инвестиции</td><td><strong>€118,000</strong> (Кюрасао)</td></tr>
+                    <tr><td>Чистая маржа</td><td><strong>3.5%</strong> (4% − 0.5% PSP)</td></tr>
+                    <tr><td>Фикс без маркетинга</td><td><strong>€10,000/мес</strong></td></tr>
+                    <tr><td>Маркетинг</td><td><strong>~€4K/мес</strong> при €500K обороте</td></tr>
+                    <tr><td>Реальная безубыточность</td><td><strong>~€400K/мес</strong></td></tr>
+                    <tr><td>Прибыль при €500K</td><td><strong>€3,300/мес</strong></td></tr>
+                    <tr><td>Прибыль при €1M</td><td><strong>€16,600/мес</strong></td></tr>
+                    <tr><td>Окупаемость при €1M</td><td><strong>7 месяцев</strong></td></tr>
                 </table>
                 <h4>Ключевые условия успеха:</h4>
                 <ol>
